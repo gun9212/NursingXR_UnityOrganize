@@ -1,0 +1,7 @@
+*
+!.gitignore
+!Workflows/
+!Workflows/**
+
+Workflows/**/*.bak
+Workflows/**/*.meta
