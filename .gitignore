@@ -5,3 +5,5 @@
 
 Workflows/**/*.bak
 Workflows/**/*.meta
+# Exclude workflow backup and local test planning documents from shared pushes
+Workflows/ProjectAssetInventory/FINAL_TEST_WORKFLOW.md

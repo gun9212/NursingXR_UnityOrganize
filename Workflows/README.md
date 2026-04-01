@@ -2,6 +2,23 @@
 
 This folder contains reusable workflows that can travel between developers and workspaces.
 
+## AI Start Here
+
+If another developer or AI receives only this `Workflows` directory, start with the prompt below before doing anything else.
+
+```text
+Workflows\ProjectAssetInventory 를 먼저 꼼꼼히 읽고, 어떤 워크플로우인지 파악해줘.
+특히 README.md, SETUP_GUIDE.md, MAINTENANCE.md, PROMPT_TEMPLATE.md, projects.json, projects.local.json 을 우선 확인해줘.
+그 다음 현재 작업 환경에 맞게 내가 바로 사용할 프롬프트를 작성해줘.
+필요하면 workspace root, workflow root, output label, target projects 중 꼭 필요한 값만 나에게 물어봐줘.
+```
+
+After that, continue with the workflow-specific entry README:
+
+```text
+Workflows\ProjectAssetInventory\README.md
+```
+
 ## Portable Layout
 
 Treat the folder that contains `Workflows` as the workspace root:
@@ -19,9 +36,9 @@ Treat the folder that contains `Workflows` as the workspace root:
 
 For first-time setup on another machine or workspace, use:
 
-`	ext
-Workflows\\ProjectAssetInventory\\SETUP_GUIDE.md
-` 
+```text
+Workflows\ProjectAssetInventory\SETUP_GUIDE.md
+```
 
 ## Current Workflow
 

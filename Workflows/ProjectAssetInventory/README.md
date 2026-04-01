@@ -89,6 +89,22 @@ Use this shared prompt when another developer or AI needs to run the workflow wi
 Workflows\ProjectAssetInventory\PROMPT_TEMPLATE.md
 ```
 
+## Recommended First User Prompt
+
+When a user first opens this workflow and wants the AI to guide setup or execution, they should start with this prompt:
+
+```text
+Workflows\ProjectAssetInventory 를 먼저 꼼꼼히 읽고, 어떤 워크플로우인지 파악해줘.
+특히 README.md, SETUP_GUIDE.md, MAINTENANCE.md, PROMPT_TEMPLATE.md, projects.json, projects.local.json 을 우선 확인해줘.
+그 다음 현재 작업 환경에 맞게 내가 바로 사용할 프롬프트를 작성해줘.
+필요하면 workspace root, workflow root, output label, target projects 중 꼭 필요한 값만 나에게 물어봐줘.
+```
+
+Expected AI behavior from that prompt:
+- use this README as the execution entrypoint
+- read the setup, maintenance, prompt template, and config files before proposing commands
+- derive workspace and workflow roots from the opened file location when safe
+- ask only for missing run-specific values
 ## AI Entry Behavior
 
 If another AI receives only the `Workflows` directory on a different PC, it should use this README as the entrypoint.
